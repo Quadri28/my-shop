@@ -21,7 +21,7 @@ const CategoryContainer = () => {
       };
     };
     fetchCategory();
-  }, [componentMounted]);
+  },[componentMounted]);
 
   const filterProduct = (data) => {
     const updatedList = filter.filter((x) => x.category === data);

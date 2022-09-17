@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
+import { NavLink } from "react-router-dom";
 import MenuItem from "@mui/material/MenuItem";
 import { BsCartFill } from "react-icons/bs";
 import { Link } from "@mui/material";
@@ -212,22 +212,24 @@ const ResponsiveAppBar = (props) => {
 
           <Box>
             {(location.pathname ==='/cart') ?  '' :
-            <Button
-              variant="outlined"
-              sx={{
+            <NavLink
+              
+              style={{
                 color: "#fff",
                 border: "solid 1px #ddd",
                 fontSize: "15px",
                 textTransform: "capitalize",
+                textDecoration:'none',
+                padding:' 8px 10px',
+                borderRadius:'5px'
               }}
-              href="/cart"
+              to= '/cart' 
             >
               <BsCartFill
                 style={{ marginRight: "3px", fontSize: "15px" }}
-
               />
-              Cart {props.productDetails.length}
-            </Button> 
+             Cart {props.productDetails.length} 
+            </NavLink> 
             }
           </Box>
         </Toolbar>
