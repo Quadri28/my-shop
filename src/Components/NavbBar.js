@@ -10,7 +10,6 @@ import Container from "@mui/material/Container";
 import { NavLink } from "react-router-dom";
 import MenuItem from "@mui/material/MenuItem";
 import { BsCartFill } from "react-icons/bs";
-import { Link } from "@mui/material";
 import { connect } from "react-redux";
 import { useLocation } from "react-router-dom";
 
@@ -79,57 +78,47 @@ const ResponsiveAppBar = (props) => {
               }}
             >
               <MenuItem onClick={handleCloseNavMenu}>
-                <Link
-                  href="/"
-                  textAlign="center"
-                  component="a"
-                  sx={{ color: "#c1ade4", textDecoration: "none" }}
+                <NavLink
+                  to="/"
+                  style={{ color: "#c1ade4", textDecoration: "none", textAlign:"center" }}
                 >
                   Home
-                </Link>
+                </NavLink>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <Link
-                  href="/products"
-                  textAlign="center"
-                  component="a"
-                  sx={{ color: "#c1ade4", textDecoration: "none" }}
+                <NavLink
+                  to="/products"
+                  style={{ color: "#c1ade4", textDecoration: "none", textAlign:"center" }}
                 >
                   Products
-                </Link>
+                </NavLink>
               </MenuItem>
 
               <MenuItem onClick={handleCloseNavMenu}>
-                <Link
-                  href="#"
-                  textAlign="center"
-                  component="a"
-                  sx={{ color: "#c1ade4", textDecoration: "none" }}
+                <NavLink
+                  to="/"
+                  style={{ color: "#c1ade4", textDecoration: "none",  textAlign:"center" }}
                 >
                   About
-                </Link>
+                </NavLink>
               </MenuItem>
 
               <MenuItem onClick={handleCloseNavMenu}>
-                <Link
-                  href="#"
-                  textAlign="center"
-                  component="a"
-                  sx={{ color: "#c1ade4", textDecoration: "none" }}
+                <NavLink
+                  to="/"
+                  style={{ color: "#c1ade4", textDecoration: "none",  textAlign:"center" }}
                 >
                   Contact
-                </Link>
+                </NavLink>
               </MenuItem>
 
               <MenuItem onClick={handleCloseNavMenu}>
-                <Link
-                  href="#"
-                  textAlign="center"
-                  component="a"
-                  sx={{ color: "#c1ade4", textDecoration: "none" }}
+                <NavLink
+                  to="/"
+                  style={{ color: "#c1ade4", textDecoration: "none", textAlign:"center" }}
                 >
                   Login
-                </Link>
+                </NavLink>
               </MenuItem>
             </Menu>
           </Box>
@@ -154,59 +143,50 @@ const ResponsiveAppBar = (props) => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <MenuItem onClick={handleCloseNavMenu}>
-              <Link
-                href="/"
-                textAlign="center"
-                component="a"
-                variant="p"
-                sx={{ color: "#fff", textDecoration: "none" }}
+              <NavLink
+                to="/"
+                style={{ color: "#fff", textDecoration: "none", textAlign:"center" }}
               >
                 Home
-              </Link>
+              </NavLink>
             </MenuItem>
             <MenuItem onClick={handleCloseNavMenu}>
-              <Link
-                href="/products"
-                textAlign="center"
-                component="a"
-                variant="p"
-                sx={{ color: "#fff", textDecoration: "none" }}
+              <NavLink
+                to="/products"
+                style={{ color: "#fff", textDecoration: "none", textAlign:"center" }}
+                color='#fff'
               >
                 Products
-              </Link>
+              </NavLink>
             </MenuItem>
 
             <MenuItem onClick={handleCloseNavMenu}>
-              <Link
-                href="#"
-                textAlign="center"
-                component="a"
-                sx={{ color: "#fff", textDecoration: "none" }}
+              <NavLink
+                to="/"
+                style={{ color: "#fff", textDecoration: "none",  textAlign:"center" }}
               >
                 About
-              </Link>
+              </NavLink>
             </MenuItem>
 
             <MenuItem onClick={handleCloseNavMenu}>
-              <Link
-                href="#"
-                textAlign="center"
+              <NavLink
+                to="/"
+            
                 component="a"
-                sx={{ color: "#fff", textDecoration: "none" }}
+                style={{ color: "#fff", textDecoration: "none", textAlign:"center" }}
               >
                 Contact
-              </Link>
+              </NavLink>
             </MenuItem>
 
             <MenuItem onClick={handleCloseNavMenu}>
-              <Link
-                href="#"
-                textAlign="center"
-                component="a"
-                sx={{ color: "#fff", textDecoration: "none" }}
+              <NavLink
+              to="/"
+                style={{ color: "#fff", textDecoration: "none",  textAlign:"center" }}
               >
                 Login
-              </Link>
+              </NavLink>
             </MenuItem>
           </Box>
 

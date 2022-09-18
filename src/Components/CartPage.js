@@ -58,8 +58,8 @@ const CartPage = (props) => {
                         <Typography mb="1rem"> add the item?</Typography>
                       )}
                     </Box>
-                    <Box display="flex" gap={1} flexDirection="column" padding='0 0 2rem'>
-                      <Box display="flex" gap={2}>
+                    <Box display="flex" gap='1rem' flexDirection="column" padding='0 0 2rem'>
+                      <Box display="flex" gap='2rem'>
                         <button
                           style={{
                             fontSize: "20px",

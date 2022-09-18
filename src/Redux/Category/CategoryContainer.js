@@ -52,8 +52,8 @@ const CategoryContainer = () => {
         display="flex"
         justifyContent="center"
         flexWrap="wrap"
-        gap={3}
-        marginBottom={3}
+        gap='2rem'
+        marginBottom='2rem'
       >
         <Button
           variant="contained"
