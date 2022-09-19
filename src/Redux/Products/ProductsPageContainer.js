@@ -60,35 +60,35 @@ const ProductsPageContainer = () => {
       >
         <Button
           variant="contained"
-          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize" }}
+          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize", margin:'5px'  }}
           onClick={() => setFilter(data)}
         >
           All
         </Button>
         <Button
           variant="contained"
-          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize" }}
+          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize", margin:'5px'  }}
           onClick={() => filterProduct("men's clothing")}
         >
           men's clothing
         </Button>
         <Button
           variant="contained"
-          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize" }}
+          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize", margin:'5px'  }}
           onClick={() => filterProduct("women's clothing")}
         >
           Women's clothing
         </Button>
         <Button
           variant="contained"
-          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize" }}
+          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize", margin:'5px'  }}
           onClick={() => filterProduct("jewelery")}
         >
           jewelery
         </Button>
         <Button
           variant="contained"
-          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize" }}
+          sx={{ backgroundColor: "#c1ade4", textTransform: "capitalize", margin:'5px' }}
           onClick={() => filterProduct("electronics")}
         >
           electronics
