@@ -1,4 +1,4 @@
-import { Grid, Typography, Container, Box, Button } from "@mui/material";
+import { Grid, Typography, Container, Box, Button, Card } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -54,6 +54,7 @@ const CategoryContainer = () => {
         flexWrap="wrap"
         gap='2rem'
         marginBottom='2rem'
+        flexDirection={{lg: 'row', sm:'column'}}
       >
         <Button
           variant="contained"
@@ -106,13 +107,14 @@ const CategoryContainer = () => {
               key={categories.id}
               xs={2}
               justifyContent="center"
-              marginY={3}
+              marginY={2}
               marginX={3}
-              paddingY={2}
-              paddingX=".5rem"
-              border="solid 1px #c1ade4"
               minheight="300px"
+              paddingX=".5rem"
+              paddingY='.8rem'
             >
+              <Card elevation={3}    
+              >
               <Box
                 sx={{
                   display: "flex",
@@ -127,6 +129,7 @@ const CategoryContainer = () => {
                     maxWidth: "150px",
                     height: "180px",
                     textAlign: "center",
+                    marginTop:'20px'
                   }}
                 />
               </Box>
@@ -155,11 +158,12 @@ const CategoryContainer = () => {
                 }}
               >
                 <NavLink to={`/category/${categories.id}`}>
-                  <Button variant="outlined" sx={{ color: "#c1ade4" }}>
+                  <Button variant="outlined" sx={{ color: "#c1ade4", marginBottom:'1rem' }}>
                     Buy now
                   </Button>
                 </NavLink>
               </Box>
+              </Card>
             </Grid>
           );
         })}

@@ -59,7 +59,7 @@ const CartPage = (props) => {
                       )}
                     </Box>
                     <Box display="flex" gap='1rem' flexDirection="column" padding='0 0 2rem'>
-                      <Box display="flex" gap='2rem'>
+                      <Box display="flex" gap='2rem' flexDirection='row' >
                         <button
                           style={{
                             fontSize: "20px",
