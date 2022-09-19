@@ -1,4 +1,4 @@
-import { Grid, Typography, Container, Box, Button } from "@mui/material";
+import { Grid, Typography, Container, Box, Button, Card } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -109,13 +109,13 @@ const ProductsPageContainer = () => {
               key={categories.id}
               xs={2}
               justifyContent="center"
-              marginY={3}
+              marginY={2}
               marginX={3}
               paddingY={2}
               paddingX=".5rem"
-              border="solid 1px #c1ade4"
               minheight="300px"
             >
+              <Card elevation={3} sx={{paddingY:'1.5rem'}}>
               <Box
                 sx={{
                   display: "flex",
@@ -163,6 +163,7 @@ const ProductsPageContainer = () => {
                   </Button>
                 </NavLink>
               </Box>
+              </Card>
             </Grid>
           );
         })}

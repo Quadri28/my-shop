@@ -208,7 +208,7 @@ const ResponsiveAppBar = (props) => {
               <BsCartFill
                 style={{ marginRight: "3px", fontSize: "15px" }}
               />
-             Cart {props.productDetails.length} 
+             Cart {props.productDetails.length === 0 ? '' : props.productDetails.length} 
             </NavLink> 
             }
           </Box>

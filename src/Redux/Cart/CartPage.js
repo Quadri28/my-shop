@@ -1,7 +1,7 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { connect } from "react-redux";
-import { addToCart, removeItem } from "../Redux/Cart/CartSlice";
+import { addToCart, removeItem } from "./CartSlice";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const CartPage = (props) => {
   const dispatch = useDispatch();
   return (
-    <Container margin="2rem 0" >
+    <Container margin="2rem 0"  >
       {props.cartItems.map((item) => {
         
         return (
@@ -33,7 +33,7 @@ const CartPage = (props) => {
                       src={item.image}
                       alt={item.title}
                       style={{
-                        width: "300px",
+                        width: "260px",
                         height: "300px",
                         backgroundColor: "#ddd",
                       }}
@@ -55,17 +55,20 @@ const CartPage = (props) => {
                           {item.cartQuantity * item.price}
                         </Typography>
                       ) : (
-                        <Typography mb="1rem"> add the item?</Typography>
+                        
+                        <Typography mb="1rem"> add the item? <Link style={{color:'#fff', textDecoration:'underline'}}to='/products'>Or choose another item </Link></Typography>
+                        
+                        
                       )}
                     </Box>
                     <Box display="flex" gap='1rem' flexDirection="column" padding='0 0 2rem'>
-                      <Box display="flex" gap='2rem' flexDirection='row' >
+                      <Box display="flex" flexDirection='row' >
                         <button
                           style={{
                             fontSize: "20px",
                             width: "40px",
                             height: "30px",
-                            marginBottom: "1rem",
+                            margin: "0  10px 1rem",
                           }}
                           onClick={() => dispatch(addToCart(item))}
                         >
@@ -76,7 +79,7 @@ const CartPage = (props) => {
                             fontSize: "20px",
                             width: "40px",
                             height: "30px",
-                            marginBottom: "1rem",
+                            margin: " 0 10px 1rem",
                           }}
                           onClick={() => dispatch(removeItem(item))}
                         >

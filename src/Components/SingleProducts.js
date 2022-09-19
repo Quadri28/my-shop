@@ -39,6 +39,8 @@ const SingleProducts = () => {
           columns={{ xs: 2, sm: 8, md: 12 }}
           justifyContent="center"
           alignItems="center"
+          marginBottom='2rem'
+          paddingBottom='2rem'
         >
           <Grid
             item
@@ -46,12 +48,12 @@ const SingleProducts = () => {
             display="flex"
             justifyContent="center"
             paddingX="1em"
-            mt={2}
+            
           >
             <img
               src={product.image}
               alt={product.title}
-              style={{ width: "330px", height: "330px" }}
+              style={{ width: "310px", height: "330px" }}
             />
           </Grid>
           <Grid item xs={6} paddingX="1em">

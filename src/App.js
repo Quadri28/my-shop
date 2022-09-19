@@ -6,7 +6,7 @@ import store from "./Redux/Store";
 import { Routes, Route } from "react-router-dom";
 import SingleProducts from "./Components/SingleProducts";
 import ProductsPageContainer from "./Redux/Products/ProductsPageContainer";
-import CartPage from "./Components/CartPage";
+import CartPage from "./Redux/Cart/CartPage";
 
 function App() {
   return (
