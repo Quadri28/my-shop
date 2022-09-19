@@ -15,6 +15,7 @@ const CategoryContainer = () => {
         setData(await response.clone().json());
         setFilter(await response.json());
         setLoading(false);
+        console.log('called')
       }
       return () => {
         setComponentMounted(!componentMounted);
@@ -140,11 +141,12 @@ const CategoryContainer = () => {
                 gutterBottom={true}
                 fontSize="15px"
                 marginY={2}
+                color='#c1ade4'
               >
                 {categories.title.substring(0, 15)}...
               </Typography>
 
-              <Typography margin="1rem 0 0" textAlign="center">
+              <Typography margin="1rem 0 0" textAlign="center" color='#c1ade4'>
                 $ {categories.price}
               </Typography>
               <Box
@@ -157,7 +159,7 @@ const CategoryContainer = () => {
                 }}
               >
                 <NavLink to={`/category/${categories.id}`}>
-                  <Button variant="outlined" sx={{ color: "#c1ade4", marginBottom:'1rem' }}>
+                  <Button variant="outlined" sx={{ color: "#c1ade4", marginBottom:'1rem', borderColor:'#c1ade4' }}>
                     Buy now
                   </Button>
                 </NavLink>

@@ -101,7 +101,7 @@ const SingleProducts = () => {
             >
               {product.description}
             </Typography>
-            <Grid display="flex" margin="2rem 0" item gap={2}>
+            <Grid display="flex" margin="2rem 0" item gap='2rem' flexDirection='row'>
               <Button
                 padding="10px"
                 variant="outlined"
@@ -109,6 +109,7 @@ const SingleProducts = () => {
                   textTransform: "capitalize",
                   paddingX: "10px",
                   color: "#c1ade4",
+                  marginRigth:'5px'
                 }}
                 onClick={() => dispatch (addToCart(product))}
               >
@@ -123,6 +124,7 @@ const SingleProducts = () => {
                   borderRadius: "5px",
                   padding: "10px",
                   backgroundColor: "#c1ade4",
+                  marginLeft:'5px'
                 }}
               >
                 go to cart

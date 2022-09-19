@@ -55,10 +55,9 @@ const CartPage = (props) => {
                           {item.cartQuantity * item.price}
                         </Typography>
                       ) : (
-                        
+                        <Box>
                         <Typography mb="1rem"> add the item? <Link style={{color:'#fff', textDecoration:'underline'}}to='/products'>Or choose another item </Link></Typography>
-                        
-                        
+                        </Box>
                       )}
                     </Box>
                     <Box display="flex" gap='1rem' flexDirection="column" padding='0 0 2rem'>
